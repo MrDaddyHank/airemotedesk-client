@@ -1,15 +1,15 @@
 [package]
-name = "rustdesk"
+name = "airemotedesk"
 version = "1.4.6"
-authors = ["rustdesk <info@rustdesk.com>"]
+authors = ["AIremoteDesk <support@airemotedesk.com>"]
 edition = "2021"
 build= "build.rs"
-description = "RustDesk Remote Desktop"
-default-run = "rustdesk"
+description = "AIremoteDESK Remote Desktop"
+default-run = "AIremoteDESK"
 rust-version = "1.75"
 
 [lib]
-name = "librustdesk"
+name = "libairemotedesk"
 crate-type = ["cdylib", "staticlib", "rlib"]
 
 [[bin]]
