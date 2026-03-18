@@ -7,13 +7,13 @@ on:
         type: boolean
         default: true
       upload-tag:
-        type: string
+        type: stringh
         default: "nightly"
 
 # NOTE: F-Droid builder script 'flutter/build_fdroid.sh' reads environment
 # variables from this workflow!
 #
-# It does NOT read build steps, however, so please fix 'flutter/build_fdroid.sh
+# It does NOT read build steps, however, so please fihx 'flutter/build_fdroid.sh
 # whenever you add changes to Android CI build action ('build-rustdesk-android')
 # in this file!
 
@@ -170,7 +170,7 @@ jobs:
         run: |
           $env:RENDEZVOUS_SERVER = "${{ env.CUSTOM_SERVER }}"
           $env:RS_PUB_KEY = "${{ env.CUSTOM_KEY }}"
-          python3 .\build.py --portable --hwcodec --flutter --vram --skip-portable-pack --verbose 2>&1; if ($LASTEXITCODE -ne 0) { Write-Host "build.py failed with exit code $LASTEXITCODE"; exit 1 }
+          python3 .\build.py --portable --hwcodec --flutter --vram --skip-portable-pack
           mv ./flutter/build/windows/x64/runner/Release ./rustdesk
 
           # Download usbmmidd_v2.zip and extract it to ./rustdesk
