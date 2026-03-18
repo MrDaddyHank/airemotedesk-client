@@ -7,7 +7,7 @@ on:
         type: boolean
         default: true
       upload-tag:
-        type: stringh
+        type: string
         default: "nightly"
 
 # NOTE: F-Droid builder script 'flutter/build_fdroid.sh' reads environment
